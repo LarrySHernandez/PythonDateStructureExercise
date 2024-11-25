@@ -7,3 +7,7 @@ def last_element(lst):
         >>> last_element([]) is None
         True
     """
+    if type(lst[len(lst) - 1]) is dict or type(lst[len(lst) - 1]) is list :
+        return None
+    else:
+        return lst[len(lst) - 1]

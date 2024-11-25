@@ -18,3 +18,17 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+    total = 0
+    count = 0
+    max = len(matrix[0])
+    while(count < max):
+        total += matrix[count][count]
+        count += 1
+    print(count)
+    count = 0
+    max2 = max - 1
+    while(count < max):
+        total += matrix[max2][count]
+        count += 1
+        max2 -= 1
+    return total
